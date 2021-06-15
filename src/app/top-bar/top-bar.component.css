@@ -1,15 +1,28 @@
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+img {
+  margin-left: 16px;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
 }
 
-li {
-  /*display: inline;*/
+.links {
+  margin-right: 16px;
+}
+
+.links a {
+  color: white;
   float: left;
+  display: block;
+  text-align: center;
+  padding: 12px 12px;
+  font-size: 32px;
 }
 
-li a {
-  display: block;
-  padding: 14px 16px;
+/* Responsive menu for phones */
+@media screen and (max-width: 720px) {
+  .links a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
