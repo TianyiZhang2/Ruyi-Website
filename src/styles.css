@@ -125,3 +125,10 @@ app-top-bar {
   justify-content: space-between;
   align-items: center;
 }
+
+/* Responsive menu for phones */
+@media screen and (max-width: 720px) {
+  app-top-bar {
+    display: block;
+  }
+}

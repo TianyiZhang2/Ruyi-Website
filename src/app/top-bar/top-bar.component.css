@@ -1,12 +1,19 @@
+/* Logo */
 img {
-  margin-left: 16px;
+  margin: 16px;
   width: 100%;
-  height: auto;
   max-width: 200px;
 }
 
+.logo:hover {
+  opacity: 100%;
+}
+
+/* Menu */
 .links {
   margin-right: 16px;
+  background-color: rgb(91, 158, 247);
+  margin-bottom: -200px;
 }
 
 .links a {
@@ -14,15 +21,25 @@ img {
   float: left;
   display: block;
   text-align: center;
-  padding: 12px 12px;
+  padding: 12px 18px;
   font-size: 32px;
 }
 
 /* Responsive menu for phones */
 @media screen and (max-width: 720px) {
+  img {
+    margin: auto;
+    margin-bottom: 16px;
+  }
+
+  .links {
+    margin-bottom: auto;
+  }
+
   .links a {
     float: none;
     display: block;
     text-align: left;
+    font-size: 24px;
   }
 }
