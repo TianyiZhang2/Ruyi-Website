@@ -1,0 +1,31 @@
+body {
+  padding-bottom: 500px;
+}
+
+.title {
+  text-align: center;
+}
+
+.image.img {
+  float: left;
+}
+
+.infobox {
+  border: 2px solid rgb(109, 133, 243);
+  background-color: rgb(234, 240, 253);
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  /* Prevent div from stretching vertically */
+  align-self: flex-start;
+}
+
+ol {
+  list-style-type: disc;
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    display: block;
+  }
+}
