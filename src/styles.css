@@ -20,6 +20,9 @@ img {
 
 body {
   margin: 0;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .container {
@@ -34,19 +37,21 @@ router-outlet + *  {
 /* Text */
 
 h1 {
-  font-size: 32px;
+  font-size: 38px;
+  color: #5a75aa;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 32px;
+  color: #5a75aa;
 }
 
 h1, h2 {
-  font-weight: lighter;
+  font-weight: bolder;
 }
 
-p {
-  font-size: 16px;
+p, li, a {
+  font-size: 22px;
 }
 
 /* Hyperlink */
@@ -118,17 +123,57 @@ label {
 
 app-top-bar {
   width: 100%;
-  background-color: #1976d2;
+  background-color: white;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;
+  align-items: center;*/
+  /* TODO: Crop right side of image */
+  background: /*linear-gradient(to right, white 0%, transparent),*/ url("https://raw.githubusercontent.com/TianyiZhang2/Ruyi-Website/master/src/assets/penticton1-corrected.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+app-bottom-bar {
+  height: 800px;
+  width: 100%;
+  background-color: white;
   padding: 16px;
+  /* overlap elements on bottom background picture 
+  margin-top: -200px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* TODO: better fade */
+  background: linear-gradient( white 0%, transparent), url("https://raw.githubusercontent.com/TianyiZhang2/Ruyi-Website/master/src/assets/penticton3-corrected.jpg");
+  background-size: cover;
+  background-position: bottom center;
 }
 
 /* Responsive menu for phones */
 @media screen and (max-width: 720px) {
   app-top-bar {
     display: block;
+    background: url("https://raw.githubusercontent.com/TianyiZhang2/Ruyi-Website/master/src/assets/penticton1-corrected.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  p, li {
+    font-size: 18px;
   }
 }

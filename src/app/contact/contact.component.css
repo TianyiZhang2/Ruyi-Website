@@ -1,3 +1,10 @@
-body {
-  padding-bottom: 500px;
+
+.inputfield {
+  /*background-color:rgb(234, 240, 253);*/
+  padding: 10px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
 }

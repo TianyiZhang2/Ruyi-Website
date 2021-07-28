@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ContactComponent } from './contact/contact.component';
+import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 @NgModule({
   imports:      [ 
@@ -15,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
     RouterModule.forRoot([
       // Add urls here
       { path: '', component: HomePageComponent },
+      { path: 'pricing', component: PricingComponent },
       { path: 'contact', component: ContactComponent },
     ])
   ],
@@ -22,7 +25,7 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent, 
     TopBarComponent, 
     HomePageComponent, 
-    ContactComponent 
+    ContactComponent, BottomBarComponent, PricingComponent 
   ],
   bootstrap:    [ 
     AppComponent 
